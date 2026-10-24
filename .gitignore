@@ -1,0 +1,63 @@
+# ===================================================================
+# BUSGo Root .gitignore
+# For Spring Boot (Backend) + React Vite (Frontend)
+# ===================================================================
+
+# ── Maven & Java Build Output ─────────────────────────────────────────
+**/target/
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+# ── Node & Frontend Build Output ──────────────────────────────────────
+**/node_modules/
+node_modules/
+**/dist/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── Environment & Secret Files ────────────────────────────────────────
+# Keep .env.example tracked, ignore real secrets
+.env
+.env.*
+!.env.example
+*.env.local
+
+# ── IDEs and Editors ──────────────────────────────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── Temporary & Scratch Files ─────────────────────────────────────────
+*.log
+lint_report.txt
+*.tmp
+*.bak
+*.swp
+*.swo
